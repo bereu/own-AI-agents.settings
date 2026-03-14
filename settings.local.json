@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/soheieto/sandbox/harness-testing-for-work/tests -type f -name *.ts -o -name *.tsx)",
+      "Bash(grep -r session /Users/soheieto/sandbox/harness-testing-for-work/src --include=*.ts)",
+      "Bash(pnpm type-check:*)",
+      "Bash(pnpm add:*)",
+      "Bash(timeout 5 tsx src/server/index.ts)",
+      "Bash(pnpm lint:fix)",
+      "Bash(rm -f src/server/index.ts src/server/session-store.ts src/server/session-runner.ts src/server/notify.ts src/server/routes/sessions.ts src/server/routes/events.ts)",
+      "Bash(rmdir src/server/routes)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm lint:*)",
+      "Bash(pnpm approve-builds:*)",
+      "Bash(PNPM_APPROVE_BUILDS=\"@swc/core\" pnpm rebuild @swc/core)",
+      "Bash(node -e \"require\\(''@swc/core''\\); console.log\\(''swc ok''\\)\")",
+      "Bash(pnpm test:e2e)",
+      "Bash(pnpm lint:fix -- tests/e2e/api.e2e.test.ts)",
+      "Bash(ls /Users/soheieto/sandbox/harness-testing-for-work/tsconfig*.json)",
+      "Bash(curl -s http://localhost:3001/api/sessions)",
+      "Bash(pnpm build:server)",
+      "Bash(node scripts/test-rollbar-server.mjs)",
+      "Bash(node scripts/test-rollbar-client.mjs)",
+      "mcp__rollbar__list-items",
+      "mcp__rollbar__get-top-items",
+      "mcp__chrome_devtools__list_pages",
+      "mcp__rollbar__get-item-details",
+      "mcp__chrome_devtools__navigate_page",
+      "mcp__chrome_devtools__list_console_messages",
+      "mcp__chrome_devtools__list_network_requests",
+      "mcp__chrome_devtools__get_network_request"
+    ]
+  }
+}
