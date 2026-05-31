@@ -1,5 +1,6 @@
 ---
 description: naming guideline about variable, function class etc. 
+applyTo: "*"
 ---
 
 # Naming Conventions

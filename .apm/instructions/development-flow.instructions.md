@@ -1,5 +1,6 @@
 ---
 description: development flow to develope a new feature from plan to implement, validate.  
+applyTo: "*"
 ---
 
 # overview 

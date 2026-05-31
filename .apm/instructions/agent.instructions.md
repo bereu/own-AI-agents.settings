@@ -1,5 +1,6 @@
 ---
 description: guideline about communicate subagent and pass tasks. 
+applyTo: "*"
 ---
 
 # Agent Rules
