@@ -1,6 +1,6 @@
 ---
-description: testing design and layout. 
-applyTo: "**/*.{ts,tsx},**/*.rb, **/*.py"
+description: Code review guidelines and checklist for evaluating changes
+applyTo: "*"
 ---
 # Code Review
 
