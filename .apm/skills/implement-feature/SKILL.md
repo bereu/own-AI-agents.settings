@@ -2,18 +2,19 @@
 name: implement-feature
 description: Use this skill to implement a feature from an active execution plan in docs/exec-plans/active/. Reads the plan, implements each action item, marks tasks complete, and moves the plan to completed when done.
 version: 1.0.0
+skill: [agent-browser]
 ---
 
 ## Overview
 
-```markdown
+
 This skill drives feature implementation from a structured execution plan. It:
-1. Reads the target exec plan from docs/exec-plans/active/
+1. Reads the target exec plan 
 2. Reviews docs/INDEX.md and relevant source files to orient in the codebase
 3. Implements each action item in the plan sequentially, marking [ ] as [x] when done
 4. Adheres to project conventions from docs/DESIGN.md, docs/TECH_STACK.md, and docs/QUALITY_SCORE.md
 5. Moves the completed plan file to docs/exec-plans/completed/ when all items are done
-```
+
 
 ## Steps
 
@@ -25,6 +26,11 @@ Read the full plan. Note:
 - **Action List**: the ordered task checklist
 - **AC (Acceptance Criteria)**: the definition of done
 - **Plan Overview / Why It Is Needed**: context for making sound implementation decisions
+- **Linear Ticket ID**: Identify the corresponding Linear ticket (e.g., LIN-XXX).
+
+### Step 1.5 — Sync with Linear
+
+Once the plan is loaded, update the Linear ticket status to `In Progress` using the `linear-cli` commands defined in the `linear-management` skill.
 
 ### Step 2 — Orient in the codebase
 
@@ -56,9 +62,7 @@ After all action items are complete, review each AC item:
 - If verifiable by inspection, confirm the criterion is satisfied.
 - Check off each AC item as it is met: `- [ ]` → `- [x]`.
 
-### Step 5 — Please ask sub agent for code review 
 
-### Step 6 — Please ask sub agent for QA features skills
 
 ### Step 7 — Move plan to completed
 
@@ -66,6 +70,8 @@ When all action items and AC items are checked off, move the plan file:
 
 ```
 docs/exec-plans/active/<plan-file>.md  →  docs/exec-plans/completed/<plan-file>.md
-```
+```z
+
+Update Linear status to `Done` using `linear-cli`.
 
 Report a brief summary of what was implemented and any follow-up items (e.g., tech debt logged in `docs/exec-plans/tech-debt-tracker.md`).
