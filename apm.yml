@@ -8,5 +8,5 @@ targets:
 dependencies:
   apm: []
   mcp: []
-includes: auto
+includes: []
 scripts: {}
