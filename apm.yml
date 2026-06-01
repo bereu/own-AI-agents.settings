@@ -2,14 +2,12 @@ name: my asset of agent
 version: 1.0.0
 description: APM project for own-AI-agents.settings
 author: sohei.eto
-# Which agent platforms to deploy to.
-# Resolution order: --target flag > this field > auto-detect from filesystem.
-# Accepted values: copilot, claude, cursor, opencode, codex, gemini, windsurf, all
 targets:
 - claude
 - copilot
 dependencies:
-  apm: []
+  apm:
+  - bereu/own-AI-agents.settings
   mcp: []
 includes: auto
 scripts: {}

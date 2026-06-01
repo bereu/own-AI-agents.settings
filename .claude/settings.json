@@ -1,0 +1,48 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm run lint && npm run storybook --debug-webpack && npm run storybook --debug",
+            "statusMessage": "Validating ADR compliance with archgate... and lint ",
+            "timeout": 300
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm run lint && npm run storybook --debug-webpack && npm run storybook --debug",
+            "statusMessage": "Validating ADR compliance with archgate... and lint ",
+            "timeout": 300
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm run lint && npm run storybook --debug-webpack && npm run storybook --debug",
+            "statusMessage": "Running quality gates..."
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm run lint && npm run storybook --debug-webpack && npm run storybook --debug",
+            "statusMessage": "Running quality gates..."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+lockfile_version: '1'
+generated_at: '2026-05-31T05:28:44.284219+00:00'
+apm_version: 0.16.0
+dependencies:
+- repo_url: bereu/own-AI-agents.settings
+  host: github.com
+  resolved_commit: 9a236fcb9b66c7d53ce8704ae8a38409595fd330
+  package_type: apm_package
+  deployed_files:
+  - .claude/agents/executor.md
+  - .claude/agents/planner.md
+  - .claude/agents/validator.md
+  - .claude/rules/agent.md
+  - .claude/rules/code-review.md
+  - .claude/rules/design-testing.md
+  - .claude/rules/development-flow.md
+  - .claude/rules/naming.md
+  - .claude/skills/implement-feature
+  - .claude/skills/plan-spec
+  - .claude/skills/qa-features-skills
+  deployed_file_hashes:
+    .claude/agents/executor.md: sha256:7ad3adbc964f3588efe6423119b28724e7a0f58247f5071833172bb841de2de6
+    .claude/agents/planner.md: sha256:e4c4858b8471f67efa6a6f2b680dad29999e8e1711529512fe3eff89c8245f7c
+    .claude/agents/validator.md: sha256:5f06918f9da2224f8674423e226d1ea8a429eaa631519ca8be24dc74e5de9c1c
+    .claude/rules/agent.md: sha256:13a606c0f3329697d629d69f992362d2123bddf5ec047d9ce4138e968a9384d8
+    .claude/rules/code-review.md: sha256:586e8b11cc7b714527a59f96f3190ec299b80862c78bf78afced49fdf2191ebb
+    .claude/rules/design-testing.md: sha256:47c134326befd1e717419f8bfa7c6e3444fce9d085455112d71e33f594158513
+    .claude/rules/development-flow.md: sha256:2a2d77e7f7f07bd713de5fbfb223e6abc7ff6c43fc78026b4cb2e2458a1a6974
+    .claude/rules/naming.md: sha256:ae77bb850e8fd9f1eaf6efb2d4aa7bb6e0b0ecfa5235f2b0f06c215a56fb3a0c
+  content_hash: sha256:d45b10131ff82f7cfd5f29fb4bf0358626da5098c4065fe919959c69ca36eaa9
+local_deployed_files:
+- .claude/agents/executor.md
+- .claude/agents/planner.md
+- .claude/agents/validator.md
+- .claude/rules/agent.md
+- .claude/rules/code-review.md
+- .claude/rules/design-testing.md
+- .claude/rules/development-flow.md
+- .claude/rules/naming.md
+- .claude/skills/implement-feature
+- .claude/skills/plan-spec
+- .claude/skills/qa-features-skills
+local_deployed_file_hashes:
+  .claude/agents/executor.md: sha256:7ad3adbc964f3588efe6423119b28724e7a0f58247f5071833172bb841de2de6
+  .claude/agents/planner.md: sha256:e4c4858b8471f67efa6a6f2b680dad29999e8e1711529512fe3eff89c8245f7c
+  .claude/agents/validator.md: sha256:5f06918f9da2224f8674423e226d1ea8a429eaa631519ca8be24dc74e5de9c1c
+  .claude/rules/agent.md: sha256:13a606c0f3329697d629d69f992362d2123bddf5ec047d9ce4138e968a9384d8
+  .claude/rules/code-review.md: sha256:586e8b11cc7b714527a59f96f3190ec299b80862c78bf78afced49fdf2191ebb
+  .claude/rules/design-testing.md: sha256:47c134326befd1e717419f8bfa7c6e3444fce9d085455112d71e33f594158513
+  .claude/rules/development-flow.md: sha256:2a2d77e7f7f07bd713de5fbfb223e6abc7ff6c43fc78026b4cb2e2458a1a6974
+  .claude/rules/naming.md: sha256:ae77bb850e8fd9f1eaf6efb2d4aa7bb6e0b0ecfa5235f2b0f06c215a56fb3a0c
