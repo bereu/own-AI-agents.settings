@@ -6,8 +6,7 @@ targets:
 - claude
 - copilot
 dependencies:
-  apm:
-  - bereu/own-AI-agents.settings
+  apm: []
   mcp: []
 includes: auto
 scripts: {}

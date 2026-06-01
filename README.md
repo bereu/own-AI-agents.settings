@@ -45,8 +45,13 @@ To consume these agent primitives, skills, and settings in another project, inst
 
 ```bash
 # Install the entire settings bundle
-apm install bereu/own-AI-agents.settings
-
+apm install bereu/own-AI-agents.settings 
+```
+```bash
+# Install the entire settings bundle to claude
+apm install bereu/own-AI-agents.settings --target claude
+```
+```bash
 # Install only a specific skill (e.g., plan-coding) from this bundle
 apm install bereu/own-AI-agents.settings --skill plan-coding
 ```
